@@ -1,0 +1,43 @@
+@use '../abstracts/mixins' as *;
+
+// Dir LTR
+
+html[dir=ltr] {
+
+    // Body App
+    body{
+        direction: ltr;
+    }
+
+
+    // Media
+    @media (max-width: 990px) {
+        // Nav
+        nav{
+            transform: translateX(-100%);  
+            left: 0;
+        }
+    }
+
+}
+
+// Dir RTL
+
+html[dir=rtl] {
+
+    // Body App
+    body{
+        direction: rtl;
+    }
+    
+
+    // Media
+    @media (max-width: 990px) {
+        // Nav
+        nav{
+            transform: translateX(100%);  
+            right: 0; 
+        }
+    }
+
+}

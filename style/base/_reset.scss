@@ -1,0 +1,236 @@
+// Font Import Cdn
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;700&display=swap');
+
+// Mixin
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+// Local Style Page
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+a, button, input, textarea, i{
+    @include transition(0.5s);
+}
+
+img{
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none !important;
+    display: inline-block;
+    cursor: pointer;
+}
+
+i{
+    vertical-align: middle;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 10px 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    display: inline-block;
+}
+
+// Tools Form
+input{
+    border: 1px solid $colorBorderInput;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+
+textarea{
+    border: 1px solid $colorBorderInput;
+    padding: 10px 20px;
+    border-radius: 2px;
+    min-height: 100px;
+    resize: none;
+}
+
+::-webkit-input-placeholder {
+    color: $placholderInputColor;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: $placholderInputColor;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: $placholderInputColor;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    color: $placholderInputColor;
+    opacity: 1;
+}
+
+.fix-icon-Input{
+    @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+// Style Scroll Site
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+// Colors
+.colorMain{
+    color: $mainColor !important;
+}
+
+.secondColor{
+    color: $secondColor !important;
+}
+
+.colorGray{
+    color : $gray !important
+}
+
+// Bg Colors
+.bgColorMain{
+    background-color: $mainColor !important;
+}
+
+.bgSecondColor{
+    background-color: $secondColor !important;
+}
+
+.bgOpColorMain{
+    background-color: #fef4f3 !important;
+}
+
+.bgColorGray{
+    background-color: #f3f3f3 !important;
+}
+
+.bgOpColorGray{
+    background-color: #FBFBFB !important;
+}
+
+// Border Color
+.borderColorMain{
+    border: 1px solid $mainColor !important;
+}
+
+.borderSecondColor{
+    border: 1px solid $secondColor !important;
+}
+
+// Class Important
+
+button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+  
+.btn-button{
+    height: 40px;
+    width: 160px;
+    font-size: 14px;
+    &:hover{
+      transform: scale(0.9);
+    }
+}
+
+.overlay-fixed{
+    @include positionItem(fixed, 0, initial, initial, initial, initial);
+    @include transition(0.3s);
+    height: 100%;
+    width: 100%;
+    z-index: 998;
+    background-color: rgba(0,0,0,0.6);              
+}
+
+.overlay-absolute{
+    @include positionItem(absolute, 0, initial, 0, initial, initial);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);              
+}
+
+.back{
+    transform: translate(0) !important;
+}
+
+.owl-carousel{
+    display: block;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    direction: ltr;
+}
+
+.text-overflow{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 170px;
+    overflow: hidden;
+}
+
+.main-body{
+    min-height: 600px;
+}
+
+.old-shadow{
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.height-view-scroll{
+    height: 500px;
+    overflow-y: auto;
+}
+
+// Fonts Sizs
+
+.small-font-10{
+    font-size: 10px;
+}
+
+.small-font-11{
+    font-size: 11px;
+}
+
+.small-font-12{
+    font-size: 12px;
+}
+
+.small-font-13{
+    font-size: 13px;
+}
+
+// Circle Icon BTN
+.icon-circle{
+    width: 35px;
+    height: 35px;
+}
