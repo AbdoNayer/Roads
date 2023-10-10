@@ -2,14 +2,27 @@
 @use '../abstracts/variables' as *;
 
 
+@media (max-width: 1000px) {
+    // Auth
+    .bg-auth{
+        @include flexItem(flex, center, center, column, initial);
+        .img-auth, img{
+            display: none;
+        }
+        .row, .col-md-7, .w-75, .w-50{
+            width: 100% !important;
+        }
+    }
+}
 
 @media (max-width: 990px) {
 
 }
 
 @media (max-width: 767px) {
-
-
+    .btn-fade-nav{
+        display: none;
+    }
 }
 
 

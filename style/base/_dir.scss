@@ -11,9 +11,9 @@ html[dir=ltr] {
 
 
     // Media
-    @media (max-width: 990px) {
+    @media (max-width: 1200px) {
         // Nav
-        nav{
+        .nav-header{
             transform: translateX(-100%);  
             left: 0;
         }
@@ -32,9 +32,9 @@ html[dir=rtl] {
     
 
     // Media
-    @media (max-width: 990px) {
+    @media (max-width: 1200px) {
         // Nav
-        nav{
+        .nav-header{
             transform: translateX(100%);  
             right: 0; 
         }

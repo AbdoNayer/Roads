@@ -2,7 +2,7 @@
 @use '../abstracts/variables' as *;
 
 
-// Style Click Nav
+// Style Click Open Header In Mobile
 .click-nav {
     display: none;
     align-items: center;
@@ -33,4 +33,45 @@
     .closed:nth-of-type(3) {
       display: none;
     }
+}
+
+// Style Main Board
+.body-board{
+  .block-sec{
+    border-radius: 10px;
+    .icon-sec{
+      span{
+        width: 50px;
+        height: 50px;
+        background-color: #fef9f3;
+      }
+    }
+  }
+}
+
+// Auth
+.bg-auth{
+  border-radius: 30px 30px 0 0;
+  height: 600px;
+  .img-auth{
+    img{
+      height: 576px;
+    }
+  }
+  .OR{
+    &::after{
+      content: "";
+      background-color: $whiteColor;
+      opacity: 40%;
+      height: 1px;
+      width: 100%;
+      @include positionItem(absolute, 50%, initial, 0, initial, translateY(-50%));
+    }
+    span{
+      z-index: 9;
+      width: 40px;
+      height: 40px;
+      background-color: $mainColor;
+    }
+  }
 }

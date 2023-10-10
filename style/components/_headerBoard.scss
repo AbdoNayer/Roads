@@ -1,0 +1,15 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.heder-dashboard{
+    .bell-list{
+
+    }
+    .user-list{
+        button{
+            img{
+                max-width: 25px;
+            }
+        }
+    }
+}

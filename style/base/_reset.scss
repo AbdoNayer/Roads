@@ -56,35 +56,36 @@ li{
 // Tools Form
 input{
     border: 1px solid $colorBorderInput;
-    padding: 10px 20px;
-    border-radius: 2px;
+    padding: 13px 20px;
+    border-radius: 10px;
+    background-color:rgba(255,255,255,0.2);
 }
 
 textarea{
     border: 1px solid $colorBorderInput;
-    padding: 10px 20px;
-    border-radius: 2px;
+    padding: 13px 20px;
+    border-radius: 10px;
     min-height: 100px;
     resize: none;
 }
 
 ::-webkit-input-placeholder {
-    color: $placholderInputColor;
+    color: $whiteColor;
     opacity: 1;
 }
 
 ::-moz-placeholder {
-    color: $placholderInputColor;
+    color: $whiteColor;
     opacity: 1;
 }
 
 :-ms-input-placeholder {
-    color: $placholderInputColor;
+    color: $whiteColor;
     opacity: 1;
 }
 
 :-moz-placeholder {
-    color: $placholderInputColor;
+    color: $whiteColor;
     opacity: 1;
 }
 
@@ -125,16 +126,8 @@ select {
     background-color: $secondColor !important;
 }
 
-.bgOpColorMain{
-    background-color: #fef4f3 !important;
-}
-
-.bgColorGray{
-    background-color: #f3f3f3 !important;
-}
-
-.bgOpColorGray{
-    background-color: #FBFBFB !important;
+.bgOpSecColor{
+    background-color: $secOpColor !important;
 }
 
 // Border Color
@@ -144,6 +137,10 @@ select {
 
 .borderSecondColor{
     border: 1px solid $secondColor !important;
+}
+
+.borderOpSecColor{
+    border: 1px solid $secOpColor !important;
 }
 
 // Class Important
@@ -209,6 +206,11 @@ button{
 .height-view-scroll{
     height: 500px;
     overflow-y: auto;
+}
+
+.outline{
+    outline: none !important;
+    box-shadow: none !important
 }
 
 // Fonts Sizs

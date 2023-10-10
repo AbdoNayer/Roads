@@ -1,6 +1,64 @@
 @use '../abstracts/mixins' as *;
 @use '../abstracts/variables' as *;
 
+// Style Footer In Web
 footer{
-    
+    background-color: $footerColor;
+    .logo-footer{
+        border-bottom: 1px solid #373a53;
+        img{
+            max-width: 150px;
+        }
+    }
+    .link-cards{
+        img{
+            max-width: 45px;
+        }
+    }
+    .links-footer{
+        ul{
+            li{
+                a{
+                    opacity: 40%;
+                    &:hover{
+                        opacity: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .end-footer{
+        .container{
+            border-top: 1px solid #373a53;
+            .link-social{
+                ul{
+                    li{
+                        a{
+                            width: 45px;
+                            height: 45px;
+                            &:hover{
+                                i{
+                                    transform: scale(1.5) rotate(360deg);
+                                }
+                            }
+                        }
+                        &.facebook{ &:hover{ a{ background-color: #1877F2; } } }
+                        &.twitter{ &:hover{ a{ background-color: #1DA1F2; } } }
+                        &.instgram{ &:hover{ a{ background-color: #E4405F; } } }
+                        &.linkedin{ &:hover{ a{ background-color: #0A66C2; } } }
+                        &.whatsapp{ &:hover{ a{ background-color: #25D366; } } }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Style Footer In Mobile
+@media (max-width: 1200px) { 
+    footer{
+        .col-md-3, .col-md-2{
+            width: 100%;
+        }
+    }
 }

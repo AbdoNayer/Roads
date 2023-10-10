@@ -1,0 +1,50 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+aside{
+    .logo-img{
+        img{
+            max-width: 130px;
+            &:last-child{
+                display: none;
+            }
+        }
+    }
+    ul{
+        li{
+            a{
+                &.active{
+                    background-color: #E6E8F3;
+                }
+                border-radius: 10px;
+                padding: 18px;
+                img{
+                    object-fit: contain;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    &.in-aside{
+        .logo-img{
+            img{
+                &:last-child{
+                    display: block;
+                }
+                &:first-child{
+                    display: none;
+                }
+            }
+        }
+        .end-footer-board{
+            display: none;
+        }
+        a{
+            text-align: center;
+            span{
+                display: none;
+            }
+        }
+    }
+}

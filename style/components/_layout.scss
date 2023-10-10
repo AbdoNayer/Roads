@@ -1,0 +1,44 @@
+// Static Variables
+$admin-header-height: 70px;
+$admin-footer-height: 70px;
+
+:root{
+  --aside-nav-width: 250px;
+}
+
+// Main Layout Grid
+.admin {
+  --spacing: 1rem;
+  // Flexbox Fallback
+  display: flex;
+  flex-wrap: wrap;
+  // Grid
+  display: grid;
+  height: 100vh;
+  grid-template-rows:     $admin-header-height 1fr $admin-footer-height;
+  grid-template-columns:  var(--aside-nav-width) 1fr;
+  grid-template-areas:    "nav header"
+                          "nav main"
+                          "nav main";
+  .heder-dashboard {
+    flex-basis: 100%;
+    grid-area: header;
+    height: $admin-header-height;
+    position: relative;
+    margin: 0 5px;
+  }
+  aside {
+    flex: 0 0 var(--aside-nav-width);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    grid-area: nav;
+  }
+  main {
+    flex: 1;
+    grid-area: main;
+    padding: var(--spacing);
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+}

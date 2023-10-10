@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- Title Page -->
+    <title>Roads</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="./images/Logo-Roads.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- Fancybox CSS -->
+    <meta name="theme-color" content="#121320">
+    <meta name="msapplication-navbutton-color" content="#121320">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320">
+
+    <!-- CSS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style/main.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="./icons/icons.css">
+
+
+</head>
+<body>
+
+    <!-- Loading App -->
+    <div class="loader w-100 h-100">
+        <div class="spinner">
+            <div class="item item-1"></div>
+            <div class="item item-2"></div>
+            <div class="item item-3"></div>
+            <div class="item item-4"></div>
+        </div>
+    </div>
+    
+    <div class="admin">
+
+        <!-- Header -->
+        <header class="d-flex align-items-center bg-white heder-dashboard">
+            <div class="d-flex align-items-center justify-content-between px-4 w-100">
+                <div class="d-flex align-items-center">
+                    <button class="btn-fade-nav">
+                        <i class="icon-menu fs-3 colorMain"></i>
+                    </button>
+                    <h5 class="fw-bold mx-3 my-0 colorMain">Overview</h5>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="lang-list mx-2">
+                        <button class="btn bgOpSecColor borderOpSecColor outline">
+                            <span class="fs-6 fw-bold">AR</span>
+                        </button>
+                    </div>
+                    <div class="dropdown bell-list mx-2">
+                        <button class="btn bgOpSecColor borderOpSecColor outline" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-bell fs-5"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown user-list mx-2">
+                        <button class="btn bgOpSecColor borderOpSecColor outline" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./images/t-ico-1.png" alt="">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Side Nav -->
+        <aside class="nav p-3">
+            <div class="d-flex flex-column w-100">
+                <div class="logo-img text-center p-2 mb-5 mt-3">
+                    <img src="./images/logo.png" alt="">
+                    <img class="m-auto" src="./images/Logo-Roads.png" alt="">
+                </div>
+                <a href="" class="btn-button w-100 bgColorMain text-white rounded-3 mb-4 d-flex align-items-center justify-content-center">
+                    <i class="icon-plus-square"></i>
+                    <span class="mx-2">Ovreview</span>
+                </a>
+                <ul class="d-flex flex-column">
+                    <li class="my-1">
+                        <a href="" class="d-block active">
+                            <img src="./images/t-ico-7.png" alt="">
+                            <span class="fw-bold colorMain mx-2">Ovreview</span>
+                        </a>
+                    </li>
+                    <li class="my-1">
+                        <a href="" class="d-block">
+                            <img src="./images/t-ico-6.png" alt="">
+                            <span class="fw-bold colorMain mx-2">Driving Behaviour</span>
+                        </a>
+                    </li>
+                    <li class="my-1">
+                        <a href="" class="d-block">
+                            <img src="./images/t-ico-5.png" alt="">
+                            <span class="fw-bold colorMain mx-2">Malfunctions</span>
+                        </a>
+                    </li>
+                    <li class="my-1">
+                        <a href="" class="d-block">
+                            <img src="./images/t-ico-4.png" alt="">
+                            <span class="fw-bold colorMain mx-2">Invoice</span>
+                        </a>
+                    </li>
+                    <li class="my-1">
+                        <a href="" class="d-block">
+                            <img src="./images/t-ico-3.png" alt="">
+                            <span class="fw-bold colorMain mx-2">Support</span>
+                        </a>
+                    </li>
+                    <li class="my-1">
+                        <a href="" class="d-block py-2">
+                            <img src="./images/t-ico-2.png" alt="">
+                            <span class="fw-bold colorMain mx-2">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="mt-5 pt-5 end-footer-board">
+                    <p class="m-0 text-center colorMain small-font-13"><span class="fw-bold">7 Roads</span> All rights reserved © 2023</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Body -->
+        <main class="main-body body-board py-5">
+            <div class="container p-0 m-0">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3 col-xs-12">
+                        <div class="border py-3 px-3 my-2 block-sec">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-sec">
+                                    <span class="borderSecondColor d-flex rounded-circle align-items-center justify-content-center">
+                                        <i class="icon-users-group secondColor fs-6"></i>
+                                    </span>
+                                </div>
+                                <div class="info-sec px-3">
+                                    <h3 class="colorMain fw-bold m-0">200</h3>
+                                    <span class="small-font-13 fw-bold colorMain">All Clients</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="border py-3 px-3 my-2 block-sec">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-sec">
+                                    <span class="borderSecondColor d-flex rounded-circle align-items-center justify-content-center">
+                                        <i class="icon-discount-fill secondColor fs-4"></i>
+                                    </span>
+                                </div>
+                                <div class="info-sec px-3">
+                                    <h3 class="colorMain fw-bold m-0">600</h3>
+                                    <span class="small-font-13 fw-bold colorMain">Total Discount</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="border py-3 px-3 my-2 block-sec">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-sec">
+                                    <span class="borderSecondColor d-flex rounded-circle align-items-center justify-content-center">
+                                        <i class="icon-file-text secondColor fs-4"></i>
+                                    </span>
+                                </div>
+                                <div class="info-sec px-3">
+                                    <h3 class="colorMain fw-bold m-0">800</h3>
+                                    <span class="small-font-13 fw-bold colorMain">Exported Reports</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="border py-3 px-3 my-2 block-sec">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-sec">
+                                    <span class="borderSecondColor d-flex rounded-circle align-items-center justify-content-center">
+                                        <i class="icon-team-dashboard secondColor fs-5"></i>
+                                    </span>
+                                </div>
+                                <div class="info-sec px-3">
+                                    <h3 class="colorMain fw-bold m-0">900</h3>
+                                    <span class="small-font-13 fw-bold colorMain">Number of Branches</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Plugin Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- Plugin Animation Page -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Plugin Text Animation -->
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

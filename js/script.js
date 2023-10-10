@@ -10,6 +10,11 @@ $(window).on('load', function () {
     });
     $("body").css("overflow-y", "auto");
 
+    if ($(window).width() < 767) {
+        $("aside").addClass("in-aside");
+        document.documentElement.style.setProperty('--aside-nav-width', '100px')
+    }
+
 });
 
 $(document).ready(function () {
@@ -17,10 +22,20 @@ $(document).ready(function () {
     // Click Open Nav In Mobile
     $(document).on("click", ".click-nav, .overlay",function() {
         $(".handle").toggleClass("closed");
-        $("nav").toggleClass("back");
+        $(".nav-header").toggleClass("back");
         $(".overlay-fixed").toggleClass("back");
         $("nav li").toggleClass("animSlideIn");
         $("body").toggleClass("overflow-hidden");
+    });
+
+    // Toggle Nav
+    $(document).on("click", ".btn-fade-nav",function() {
+        $("aside").toggleClass("in-aside");
+        if ($("aside").hasClass('in-aside')) {
+            document.documentElement.style.setProperty('--aside-nav-width', '100px')
+        }else{
+            document.documentElement.style.setProperty('--aside-nav-width', '250px')
+        }
     });
 
     /// Show And Hide Password
@@ -30,6 +45,17 @@ $(document).ready(function () {
             $('.input-password').attr("type", "text");
         } else {
             $('.input-password').attr("type", "password");
+        }
+    });
+
+    // Scroll Fix Header
+    $(window).scroll(function () {
+        if ($(window).width() > 767) {
+            if($(this).scrollTop() > 30){
+                $('.header-home').addClass('header-fixed')
+            }else{
+                $('.header-home').removeClass('header-fixed')
+            }
         }
     });
 

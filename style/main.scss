@@ -4,7 +4,10 @@
 
 // Components
 @use 'components/loader' as *;
-@use 'components/header' as *;
+@use 'components/layout' as *;
+@use 'components/aside' as *;
+@use 'components/headerBoard' as *;
+@use 'components/headerHome' as *;
 @use 'components/footer' as *;
 
 // Base
