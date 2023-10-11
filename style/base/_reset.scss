@@ -59,10 +59,12 @@ input{
     padding: 13px 20px;
     border-radius: 10px;
     background-color:rgba(255,255,255,0.2);
+    color: $whiteColor;
 }
 
 textarea{
     border: 1px solid $colorBorderInput;
+    color: $whiteColor;
     padding: 13px 20px;
     border-radius: 10px;
     min-height: 100px;
@@ -96,6 +98,18 @@ textarea{
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 // Style Scroll Site
@@ -143,6 +157,14 @@ select {
     border: 1px solid $secOpColor !important;
 }
 
+.borColorMain{
+    border-color: $mainColor !important;
+}
+
+.borSecondColor{
+    border-color: $secondColor !important;
+}
+
 // Class Important
 
 button{
@@ -176,6 +198,16 @@ button{
     background-color: rgba(0,0,0,0.6);              
 }
 
+table{
+    tbody, td, tfoot, th, thead, tr{
+        vertical-align: middle;
+        text-align: center;
+        border: 0;
+        border-bottom: 1px solid #DDD;
+        padding: 15px !important;
+    }
+}
+
 .back{
     transform: translate(0) !important;
 }
@@ -203,6 +235,10 @@ button{
     box-shadow: 0 3px 6px #00000029;
 }
 
+.over-x{
+    overflow-x: auto;
+}
+
 .height-view-scroll{
     height: 500px;
     overflow-y: auto;
@@ -211,6 +247,16 @@ button{
 .outline{
     outline: none !important;
     box-shadow: none !important
+}
+
+.btn-icon{
+    width: 35px;
+    height: 35px;
+}
+
+.btn-icon-big{
+    width: 65px;
+    height: 65px;
 }
 
 // Fonts Sizs

@@ -9,6 +9,17 @@ html[dir=ltr] {
         direction: ltr;
     }
 
+    // Style Main Board
+    .body-board{
+        .in-filter{
+            .search-in{
+                button{
+                    right: 15px;
+                }
+            }
+        }
+    }
+
 
     // Media
     @media (max-width: 1200px) {
@@ -28,6 +39,17 @@ html[dir=rtl] {
     // Body App
     body{
         direction: rtl;
+    }
+
+    // Style Main Board
+    .body-board{
+        .in-filter{
+            .search-in{
+                button{
+                    left: 15px;
+                }
+            }
+        }
     }
     
 

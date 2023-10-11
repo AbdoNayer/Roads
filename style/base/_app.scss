@@ -35,6 +35,79 @@
     }
 }
 
+// Style RadioBox
+.radio-box {
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: auto;
+      &:checked {
+          ~ .checkmark {
+              border: 1px solid $mainColor;
+              background-color: $mainColor;
+          }
+          ~ .checkmark:after {
+              display: block;
+          }
+      }
+  }
+  .checkmark {
+      border: 1px solid #ddd;
+      position: relative;
+      display: inline-block;
+      height: 22px;
+      width: 22px;
+      background-color: transparent;
+      border-radius: 5px;
+      &:after {
+          content: "";
+          position: absolute;
+          display: none;
+          left: 7px;
+          top: 2px;
+          width: 7px;
+          height: 12px;
+          border: solid $whiteColor;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+      }
+  }
+}
+
+// Dropdown
+.dropdown-menu{
+  top: 8px !important;
+  .dropdown-item:focus, .dropdown-item:hover{
+    background-color: transparent !important;
+    color: $blackColor;
+  }
+}
+
+// Pagination
+.pagination{
+  ul{
+    li{
+      a{
+        width: 35px;
+        height: 35px;
+        border-radius: 6px;
+        i{
+
+        }
+      }
+    }
+  }
+}
+
 // Style Main Board
 .body-board{
   .block-sec{
@@ -44,6 +117,28 @@
         width: 50px;
         height: 50px;
         background-color: #fef9f3;
+      }
+    }
+  }
+  .in-filter{
+    .search-in{
+      width: 400px;
+      input{
+        border-radius: 50px;
+        padding: 0 10px;
+        height: 40px;
+        color: $blackColor
+      }
+      button{
+        @include positionItem(absolute, 7px, initial, initial, initial, initial);
+      }
+    }
+    .date-input{
+      input{
+        padding: 0 10px;
+        height: 40px;
+        border-radius: 50px;
+        color: $blackColor;
       }
     }
   }
@@ -57,6 +152,15 @@
     img{
       height: 576px;
     }
+  }
+  .otp-num{
+    input{
+      width: 60px;
+      height: 50px;
+    }
+  }
+  .vector-shape{
+    max-width: 150px;
   }
   .OR{
     &::after{
@@ -72,6 +176,79 @@
       width: 40px;
       height: 40px;
       background-color: $mainColor;
+    }
+  }
+}
+
+// Up;oad File
+.custom-file-upload {
+  border: 1px solid $colorBorderInput;
+  padding: 13px 20px;
+  border-radius: 10px;
+  background-color:rgba(255,255,255,0.2);
+  color: $whiteColor;
+}
+
+// Style Main Body Home
+.body-home{
+  // Head Poster
+  .head-poster{
+    overflow: hidden;
+    border-radius: 60px 60px 0 0;
+    height: 800px;
+    img{
+      height: 800px;
+    }
+    .info-head-poster{
+      @include positionItem(absolute, 50%, initial, 0, 0, translateY(-50%));
+      max-width: 435px;
+      h1{
+        font-size: 50px
+      }
+    }
+    .over-div{
+      @include positionItem(absolute, initial, 0, 0, 0, initial);
+      background: #e5e5e5;
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 20%,rgba(7, 22, 135, 0.8) 100%);
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 20%,rgba(7, 22, 135, 0.8) 100px);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 20%,rgba(7, 22, 135, 0.8) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$mainColor, endColorstr=$mainColor,GradientType=0);
+    }
+    .down-in{
+      @include positionItem(absolute, initial, 30px, 0, 0, initial);
+    }
+  } 
+  // Section boxs
+  .section-boxs{
+    .box-item{
+      border-radius: 15px;
+      span{
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+  // Join Us
+  .join-us{
+    border-radius: 20px;
+    img{
+      &:first-child{
+        height: 450px;
+      }
+    }
+    .over-div{
+      @include positionItem(absolute, initial, 0, 0, 0, initial);
+      background: #e5e5e5;
+      background: -moz-linear-gradient(right, rgba(7, 22, 135, 0.3) 0%,rgb(0, 13, 110) 100%);
+      background: -webkit-linear-gradient(right, rgba(7, 22, 135, 0.3) 0%,rgba(0, 13, 110) 100px);
+      background: linear-gradient(to left, rgba(7, 22, 135, 0.3) 0%,rgba(0, 13, 110) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$mainColor, endColorstr=$mainColor,GradientType=0);
+      z-index: 2;
+    }
+    .info-us{
+      @include positionItem(absolute, 50%, initial, 0, 0, translateY(-50%));
+      max-width: 85%;
+      z-index: 6;
     }
   }
 }
