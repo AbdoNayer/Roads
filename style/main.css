@@ -963,6 +963,22 @@ table tbody, table td, table tfoot, table th, table thead, table tr {
   max-width: 85%;
   z-index: 6;
 }
+.body-home .down-in {
+  font-size: 50px;
+  animation-name: my-animation;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes my-animation {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
 
 @media (max-width: 1000px) {
   .bg-auth {
@@ -975,13 +991,35 @@ table tbody, table td, table tfoot, table th, table thead, table tr {
   .bg-auth .img-auth, .bg-auth img {
     display: none;
   }
-  .bg-auth .row, .bg-auth .col-md-7, .bg-auth .w-75, .bg-auth .w-50 {
+  .row, .col-md-7, .w-75, .w-50, .date-input, .date-input input {
     width: 100% !important;
   }
 }
 @media (max-width: 767px) {
   .btn-fade-nav {
     display: none;
+  }
+  .px-5 {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .body-home .head-poster {
+    height: 400px;
+  }
+  .body-home .head-poster img {
+    height: 400px;
+  }
+  .body-home .head-poster .info-head-poster {
+    max-width: 100%;
+  }
+  .body-home .head-poster .info-head-poster h1 {
+    font-size: 30px;
+  }
+  .body-home .join-us img:first-child {
+    height: 350px;
   }
 }
 html[dir=ltr] body {

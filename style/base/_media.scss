@@ -9,9 +9,10 @@
         .img-auth, img{
             display: none;
         }
-        .row, .col-md-7, .w-75, .w-50{
-            width: 100% !important;
-        }
+    }
+
+    .row, .col-md-7, .w-75, .w-50, .date-input, .date-input input{
+        width: 100% !important;
     }
 }
 
@@ -22,6 +23,37 @@
 @media (max-width: 767px) {
     .btn-fade-nav{
         display: none;
+    }
+    .px-5{
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+    }
+    .flex-col{
+        flex-direction: column;
+    }
+    // Style Main Body Home
+    .body-home{
+        // Head Poster
+        .head-poster{
+            height: 400px;
+            img{
+                height: 400px;
+            }
+            .info-head-poster{
+                max-width: 100%;
+                h1{
+                    font-size: 30px
+                }
+            }
+        }
+        // Join Us
+        .join-us{
+            img{
+                &:first-child{
+                    height: 350px;
+                }
+            }
+        }
     }
 }
 

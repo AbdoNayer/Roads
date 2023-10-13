@@ -29,6 +29,14 @@ $(document).ready(function () {
         $(this).parents('.uploaded-block').remove();
     });
 
+    // Scroll For Section
+    $(document).on("click", ".down-in",function(e) {
+        $('html, body').animate({
+            scrollTop: $('#' + $(this).data('value')).offset().top - 100
+        }, 50);
+        e.preventDefault();
+    });
+
     // Click Open Nav In Mobile
     $(document).on("click", ".click-nav, .overlay",function() {
         $(".handle").toggleClass("closed");
