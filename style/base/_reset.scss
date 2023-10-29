@@ -244,6 +244,10 @@ table{
     overflow-y: auto;
 }
 
+.position-sticky{
+    z-index: 99;
+}
+
 .outline{
     outline: none !important;
     box-shadow: none !important

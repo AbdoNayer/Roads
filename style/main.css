@@ -598,6 +598,10 @@ table tbody, table td, table tfoot, table th, table thead, table tr {
   overflow-y: auto;
 }
 
+.position-sticky {
+  z-index: 99;
+}
+
 .outline {
   outline: none !important;
   box-shadow: none !important;
@@ -796,7 +800,16 @@ table tbody, table td, table tfoot, table th, table thead, table tr {
   color: #000;
 }
 
-.pagination ul li a {
+.box-pagination {
+  position: fixed;
+  top: initial;
+  bottom: 0;
+  right: 0;
+  left: initial;
+  transform: initial;
+  margin: auto;
+}
+.box-pagination .pagination ul li a {
   width: 35px;
   height: 35px;
   border-radius: 6px;

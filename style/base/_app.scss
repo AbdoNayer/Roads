@@ -147,15 +147,18 @@
 }
 
 // Pagination
-.pagination{
-  ul{
-    li{
-      a{
-        width: 35px;
-        height: 35px;
-        border-radius: 6px;
-        i{
-
+.box-pagination{
+  @include positionItem(fixed, initial, 0, 0, initial, initial);
+  .pagination{
+    ul{
+      li{
+        a{
+          width: 35px;
+          height: 35px;
+          border-radius: 6px;
+          i{
+  
+          }
         }
       }
     }
