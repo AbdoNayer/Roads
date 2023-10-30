@@ -800,19 +800,22 @@ table tbody, table td, table tfoot, table th, table thead, table tr {
   color: #000;
 }
 
-.box-pagination {
-  position: fixed;
-  top: initial;
-  bottom: 0;
-  right: 0;
-  left: initial;
-  transform: initial;
-  margin: auto;
-}
 .box-pagination .pagination ul li a {
   width: 35px;
   height: 35px;
   border-radius: 6px;
+}
+.body-board.main-board .table-view {
+  height: 350px !important;
+}
+.body-board .table-view {
+  height: 320px !important;
+}
+.body-board .table-view table thead tr {
+  position: sticky;
+  top: 0;
+  background-color: #FFF;
+  z-index: 9;
 }
 .body-board .block-sec {
   border-radius: 10px;

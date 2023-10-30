@@ -148,7 +148,7 @@
 
 // Pagination
 .box-pagination{
-  @include positionItem(fixed, initial, 0, 0, initial, initial);
+  // @include positionItem(fixed, initial, 0, 0, initial, initial);
   .pagination{
     ul{
       li{
@@ -167,6 +167,24 @@
 
 // Style Main Board
 .body-board{
+  &.main-board {
+    .table-view{
+      height: 350px !important;
+    }
+  }
+  .table-view{
+    height: 320px !important;
+    table{
+      thead{
+        tr{
+          position: sticky;
+          top: 0;
+          background-color: $whiteColor;
+          z-index: 9;
+        }
+      }
+    }
+  }
   .block-sec{
     border-radius: 10px;
     .icon-sec{
